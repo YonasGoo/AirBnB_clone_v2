@@ -16,7 +16,7 @@ def route_hbnb():
     return "HBNB"
 
 
-@app.route('/c/<path:subpath>', strict_slashes=False)
+@app.route('/c/<subpath>', strict_slashes=False)
 def route_c(subpath):
     """Return subpath"""
     return "C {}".format(escape(subpath).replace('_', ' '))
